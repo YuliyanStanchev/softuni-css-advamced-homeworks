@@ -1,1 +1,1 @@
-# softuni-css-advamced-homeworks
+# softuni-css-advanced-homeworks
