@@ -1,0 +1,23 @@
+title: Font Family Variables
+email: ju.stanchev@gmail.com
+description: something
+baseurl: "" 
+url: "" 
+github_username:  YuliyanStanchev
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+
+ exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
