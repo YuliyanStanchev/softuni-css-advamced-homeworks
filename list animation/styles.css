@@ -1,34 +1,70 @@
-* {
+*{
     padding: 0;
-    margin:  0;
+    margin: 0;
+}
+
+html{
     box-sizing: border-box;
 }
 
-body {
-  padding: 5em;  
+*, *:before, *:after{
+    box-sizing: inherit;
 }
 
-header {
-    background: #369;
-    color: #FFF;
-    border-radius: 0.3em;
-    box-shadow: 0 0 1em 0 rgba( 0,0,0,0.5 );
-}
-
-header a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-nav {
-
-}
-
-nav ul {
+body{
+    font: 16px/1.5 "Verdana", sans-serif;
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul li{
+    padding: 0;
+    list-style: none outside;
+    position: relative;
+    animation: slide-in;
+    animation-duration: 0.5s;
+    margin-bottom: 0.7em;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    
 }
 
-nav ul li {
-    display: block;
-    list-style: none outside;
+.one{
+    animation-delay: 0,2s;
+}
+.two{
+    animation-delay: 0.4s;
+}
+.three{
+    animation-delay: 0.6s;
+}
+.four{
+    animation-delay: 0.8s;
+}
+.five{
+    animation-delay: 1.00s;
+}
+.six{
+    animation-delay: 1.20s;
+}
+.seven{
+    
+    animation-delay: 1.40s;
+}
+
+@keyframes slide-in{
+    0%{
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+
+  
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
 }
